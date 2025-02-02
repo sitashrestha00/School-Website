@@ -1,0 +1,139 @@
+
+.features{
+    padding: 60px 0 30px;
+    font-family: 'Plus Jakatra Sans', sans-serif;
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        color: $text-color;
+        margin-top: -70px;
+    }
+    @media (max-width: 992px) {
+        h1{
+           font-size: 35px;
+       }
+    }
+    @media (max-width: 768px) {
+            h1{
+            font-size: 27px;
+        }
+    }
+    .academics{
+        padding-bottom: 80px;
+        position: relative;
+        .acedemic-feature{
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            gap: 10px;
+            .courses{
+                box-shadow:  0 0 15px 0 $box-shadow;
+                position: relative;
+                transition: all 0.4s ease;
+                overflow: hidden;
+                height: 450px;
+                margin-bottom: 20px;
+                .courses-image{
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .courses-detail-overlay{
+                    padding-left: 10px;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    -webkit-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    background-color: $color-black;
+                    transform: translateX(-100px);
+                    .courses-content{
+                        color: $color-white;
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        .course-name{
+                            a{
+                                text-decoration: none;
+                                h4{
+                                    margin-bottom: 30px;
+                                    font-weight: 600;
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                        .course-overall-detail{
+                            display: flex;
+                            flex-direction: row;
+                            .icon{
+                                padding: 10px;
+                                font-size: 30px;
+                                a{
+                                    text-decoration: none;
+                                    color: $color-white;
+                                }
+                            }
+                            .icon-detail{
+                                a{
+                                    text-decoration: none;
+                                    h6{
+                                        padding-top: 10px;
+                                        font-size: 14px;
+                                        color: $color-white;
+                                    }
+                                    p{
+                                        color: $color-white;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .courses-detail{
+                    padding: 15px;
+                    margin-top: 20px;
+                    color: $text-color;
+                    text-align: center;
+                    h5{
+                        font-size: 16px;
+                    }
+                    h2{
+                        padding-top: 20px;
+                        font-size: clamp(1.375rem, 4vh, 1.375rem);
+                        font-weight: 700;
+                        margin: 0 0 10px;
+                    }
+                }
+                @media (max-width: 640px) {
+                    .courses-detail {       
+                        margin-top: 0;
+                        padding: 0;
+                        padding-left: 10px;
+                        h2{
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+            .courses:hover .courses-detail-overlay{
+                opacity: 1;
+                background-color: $text-color;
+                transform: translateY(0px);
+                transition: all 0.5s ease-in-out 0s;
+            }
+        }
+    }
+}

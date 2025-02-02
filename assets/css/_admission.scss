@@ -1,0 +1,428 @@
+.enrollment{
+    font-family: 'Plus Jakatra Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    .topic{
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            color: $text-color;
+            line-height: 1.5;
+        }
+        p{
+            font-size: clamp(12px, 1.5vw, 16px);
+            font-weight: 300;
+            letter-spacing: .35px;
+            line-height: 1.875;
+            margin: 18px 0;
+            color: $gray-color;
+        }
+    }
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+            img{
+                height: 65px;
+                width: 65px;
+                margin-right: 35px;
+            }
+            span{
+                font-size: 24px;
+                color: $text-color;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .topic{
+            h1{
+                font-size: 36px;
+            }
+        }
+        ul {
+            text-align: center;
+            li{ 
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 25px;
+                }
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .topic{
+            h1{
+                font-size: 30px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        ul {
+            text-align: center;
+            li{ 
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 25px;
+                }
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        .topic{
+            h1{
+                font-size: 24px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+        ul {
+            text-align: center;
+            li{ 
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin-right: 25px;
+                }
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+.process{
+    padding: 64px 0 40px;
+    background-color: #f6f6f6;
+    h4{
+        text-align: center;
+        font-size: 27px;
+        color: $text-color;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    @media (max-width: 992px) {
+        h4{
+           font-size: 25px;
+       }
+    }
+    @media (max-width: 768px) {
+            h4{
+            font-size: 23px;
+        }
+    }
+    .admission-process{
+        .process-one, .process-two{
+            background-color: white;
+            height: 391px;
+            width: 100%;
+            padding: 40px 25px;
+            margin-bottom: 10px;
+        }
+        strong{
+            font-size: 20px;
+            color: $orange-color;
+            margin: 0 0 15px;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 18px;
+            color: $gray-color;
+            line-height: 1.5;
+        }
+    }
+    .document{
+        background-color: white;
+        height: 391px;
+        width: 100%;
+        padding: 40px 25px;
+        margin-bottom: 10px;
+        p{
+            color: $gray-color;
+            font-size: 19px;
+            margin: 0 0 15px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;  
+            column-count: 2;
+            
+            li{
+                i{
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    font-size: 17px;
+                    color: $orange-color;
+                    line-height: 1.5;
+                }
+                span{
+                    margin-top: 20px;
+                    font-size: 18px;
+                    color: $gray-color;
+                    line-height: 1.5;
+                }
+                @media (max-width: 992px) {
+                    i{
+                       font-size: 15px;
+                    }
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    i{
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .admission-process{
+            .process-one, .process-two{
+                height: 225px;
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        .document{
+            ul{
+                column-count: 1;
+            }
+        }
+    }
+}
+
+.faq{
+    padding: 64px 0 40px;
+    font-family: 'Plus Jakatra Sans', sans-serif;   
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        color: $text-color;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    @media (max-width: 992px) {
+        h1{
+           font-size: 35px;
+       }
+    }
+    @media (max-width: 768px) {
+            h1{
+            font-size: 27px;
+        }
+    }
+    form{
+        box-shadow: 0 0 10px #7d7c7c5d;
+        padding: 30px;
+        margin-top: 20px;
+        .form-group{
+            margin-bottom: 10px;
+            vertical-align: middle;
+            input, textarea {
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                border: none !important;
+                display: inline-block;
+                padding: 10px;
+                background-color: #f1e7e7;
+            
+                &::placeholder {
+                    font-size: 14px;
+                    color: #0000005d;
+                }
+            
+                &:focus {
+                    outline: none !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+            }
+            
+        }
+        .button{
+            text-align: center;
+            margin-bottom: 15px;
+            button{
+                padding: 5px 40px 5px 40px;
+                background-color: $text-color;
+                color: $color-white;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 7px;
+                border: none;
+                &:hover{
+                    transition: all 0.5s ease-in-out 0s;
+                    background-color: $orange-color;
+                }
+            }
+        }
+    }
+}
+
+.form{
+    padding: 64px 0 40px;
+    font-family: 'Plus Jakatra Sans', sans-serif;
+    background-color: #f6f6f6;
+    .greeting{
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+            color: $orange-color;
+            line-height: 1.5;
+        }
+        p{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            color: $orange-color;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 992px) {
+            h1{
+               font-size: 35px;
+           }
+           p{
+                font-size: 16px;
+           }
+        }
+        @media (max-width: 768px) {
+            h1{
+                font-size: 27px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .show-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        button{
+            background-color: $text-color;
+            color: $color-white;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            &:hover{
+                background-color: $orange-color;
+            }
+        }
+    }
+    .admission-form{
+        background-color: #f6f6f6;
+        box-shadow: 5px 5px 15px #0000005d;
+
+        .school{
+            background-color: $text-color;
+            .school-name{
+                color: $color-white;
+                text-align: center;
+                h1{
+                    margin-top: 10px;
+                    font-weight: 700;
+                }
+                h4{
+                    font-weight: 600;
+                }
+            }
+        }
+        form{
+            color: $text-color;
+            padding: 20px;
+            .form-group{
+                margin-bottom: 10px;
+                vertical-align: middle;
+                form label {
+                    display: block;
+                    margin: 10px 0 5px;
+                    font-weight: bold;
+                }
+                input {
+                    margin-left: 20px;
+                    width: calc(80% - 20px);
+                    margin-bottom: 15px;
+                    border: none;
+                    border-bottom: 1px dashed #a29f9f;
+                    background-color: transparent;
+                    display: inline-block;
+                    
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+                }
+            }
+            .form-group-radio{
+                margin-bottom: 20px;
+                // display: inline-block;
+                vertical-align: middle;
+            }
+            .address {
+                border: 1px dashed #ccc; 
+                border-radius: 8px; 
+                padding: 20px; 
+                position: relative; 
+                margin-bottom: 20px;
+                
+                p {
+                  position: absolute; 
+                  top: -12px; 
+                  left: 20%; 
+                  transform: translateX(-50%); 
+                  background: #f6f6f6;
+                  padding: 0 10px;
+                  font-weight: bold; 
+                }
+              }
+              
+
+        }
+        .submit-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            button{
+                background-color: $text-color;
+                color: $color-white;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 10px 20px;
+                border: none;
+                &:hover{
+                    transition: all 0.5s ease-in-out 0s;
+                    background-color: $orange-color;
+                }
+            }
+        }
+    }
+    
+  .hidden {
+    display: none;
+  }
+}

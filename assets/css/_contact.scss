@@ -1,0 +1,186 @@
+
+.contact{
+    font-family: 'Plus Jakatra Sans', sans-serif;
+    padding: 0 0 30px;
+    h1{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: $text-color;  
+        margin-bottom: 20px;
+    }
+    @media (max-width: 992px) {
+        h1{
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 768px) {
+        h1{
+            font-size: 26px;
+        }
+    }
+    .helpline{
+        border-radius: 5px;
+        padding-top: 20px;
+        h2{
+            margin-top: 10px;
+            text-align: left;
+            font-size: 35px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: $text-color;  
+            margin-bottom: 10px;
+        }
+        @media (max-width: 992px) {
+            h2{
+                font-size: 28px;
+            }
+        }
+        @media (max-width: 768px) {
+            h2{
+                font-size: 25px;
+            }
+        }
+        .quest{
+            font-size: 18px;
+            color: $text-color;
+            &::after{
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: #afabab76;
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }  
+        }
+        @media (max-width: 992px) {
+            .quest{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 768px) {
+            .quest{
+                font-size: 14px;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #afabab76;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }  
+        .contact-data{
+            display: flex;
+            i{
+                margin: 10px 20px 10px 0;
+                font-size: 20px;
+                color: $orange-color;
+            }
+            .contact-detail{
+                margin-bottom: 5px;
+                color: $text-color;
+                strong{
+                    font-size: 18px;
+                }
+                p{
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .social-media{
+        h2{
+            text-align: left;
+            font-size: 35px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: $text-color;  
+            margin-bottom: 20px;
+        }
+        @media (max-width: 992px) {
+            h2{
+                font-size: 28px;
+            }
+        }
+        @media (max-width: 768px) {
+            h2{
+                font-size: 25px;
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-bottom: 20px;
+            li{
+                display: inline;
+                i{
+                    margin-right: 10px;
+                    font-size: 18px;
+                    color: $text-color;
+                    &:hover{
+                        color: $orange-color;
+                    }
+                }
+            }   
+        }
+    }
+    form{
+        box-shadow: 0 0 10px #7d7c7c5d;
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 10px;
+        .form-group{
+            margin-bottom: 10px;
+            vertical-align: middle;
+            input, textarea {
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 15px;
+                border-radius: 20px;
+                border: none;
+                display: inline-block;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: #f1e7e7;
+                &::placeholder{
+                    font-size: 14px;
+                    color: #0000005d;
+                }
+                
+                &:focus {
+                    outline: none !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+        .button{
+            text-align: center;
+            button{
+                padding: 5px 40px 5px 40px;
+                background-color: $text-color;
+                color: $color-white;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 7px;
+                border: none;
+                &:hover{
+                    transition: all 0.5s ease-in-out 0s;
+                    background-color: $orange-color;
+                }
+            }
+        }
+    }
+    
+}
+iframe{
+    gap: 0;
+}
