@@ -228,6 +228,27 @@
             font-size: 27px;
         }
     }
+    .accordion{
+        .accordion-item{
+            border: none;
+            margin-bottom: 2px;
+            .accordion-header{
+                .accordion-button{
+                    background-color: $text-color;
+                    color: $color-white;
+                    font-size: 16px;
+                    font-weight: 600;
+                    border-radius: 5px;
+                }
+            }
+            .accordion-body{
+                background-color: #f2ecec;
+                border-radius: 5px;
+                color: $text-color;
+            }
+        }
+    }
+
     form{
         box-shadow: 0 0 10px #7d7c7c5d;
         padding: 30px;
