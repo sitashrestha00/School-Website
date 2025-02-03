@@ -45,8 +45,7 @@
     .club{
         margin: 0;
         padding: 0;
-        .club-data,
-        .club-data-1{
+        .club-data{
             &::after{
                 content: "";
                 display: block;
@@ -100,7 +99,7 @@
                 }
             }
         }
-        .club-data-1{
+        .club-info{
             .row{
                 flex-direction: row-reverse;
             }

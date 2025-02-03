@@ -340,11 +340,11 @@ header {
     }
 }
 
-.school-features{
+.school-features-section{
     padding: 74px 0 30px;
     font-family: 'Plus Jakatra Sans', sans-serif;
     background-color: #d6d3d333;
-    .features{
+    .school-features{
         &::after{
             content: "";
             display: block;
@@ -355,7 +355,7 @@ header {
             margin-top: 20px;
             margin-bottom: 20px;
         }
-        .feature-topic{
+        .school-feature-topic{
             p{
                 font-size: 14px;
                 color: $orange-color;
@@ -367,7 +367,7 @@ header {
             }
         }
         @media (max-width: 992px) {                  
-            .feature-topic{
+            .school-feature-topic{
                 p{
                     font-size: 13px;
                 }
@@ -377,7 +377,7 @@ header {
             }
         }
         @media (max-width: 768px) {   
-            .feature-topic {
+            .school-feature-topic {
                 h2{
                     font-size: 27px;
                 }
@@ -385,7 +385,7 @@ header {
     
         }
         @media (max-width: 575px) {   
-            .feature-topic {
+            .school-feature-topic {
                 
                 h2{
                     font-size: 23px;
@@ -393,7 +393,7 @@ header {
             }
     
         }
-        .feature-body{
+        .school-feature-body{
             p{
                 font-size: 16px;
                 color: $gray-color;
@@ -428,7 +428,7 @@ header {
             }
         }
         @media (max-width: 992px) {                  
-            .feature-body{
+            .school-feature-body{
                 p{
                     font-size: 14px;
                 }
@@ -440,7 +440,7 @@ header {
             }
         }
     }
-    .facilities{
+    .school-facilities{
         padding-bottom: 20px;
         .facility-content{
             display: flex;
@@ -489,7 +489,7 @@ header {
             }
         }
     }
-    .academics{
+    .school-academics{
         padding-top: 50px;
         padding-bottom: 80px;
         position: relative;
@@ -626,7 +626,7 @@ header {
     }
 }
 
-.gallery{
+.gallery-section{
     padding: 74px 0 30px;
     font-family: 'Plus Jakatra Sans', sans-serif;
     h1{
@@ -668,7 +668,7 @@ header {
     }
 }
 
-.testimonials{
+.testimonials-section{
     padding: 64px 0 30px;
     font-family: 'Plus Jakatra Sans', sans-serif;
     background-color: #d6d3d333;
@@ -780,7 +780,7 @@ header {
     }
 }
 
-.featured-program{
+.academic-program-section{
     padding: 64px 0 0;
     font-family: 'Plus Jakatra Sans', sans-serif;
     .club{
@@ -865,7 +865,7 @@ footer{
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        .get-in-touch{
+        .footer-contact{
             a{
                 img{
                     display: block;
@@ -890,7 +890,7 @@ footer{
                 font-weight: 600;
             }
         }
-        .quick-links{
+        .footer-quick-links{
             h4{
                 color: rgb(199, 186, 186);
                 font-weight: 800;
@@ -916,7 +916,7 @@ footer{
     
             }
         }
-        .programs{
+        .academic-programs-list{
             h4{
                 color: rgb(199, 186, 186);
                 font-weight: 800;
