@@ -4,7 +4,7 @@
   padding-bottom: 10px;
   background-color: rgba(214, 211, 211, 0.2);
 }
-.about-us h1 {
+.about-us .about-heading h1 {
   font-size: 46px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -13,23 +13,23 @@
   margin-top: 40px;
 }
 @media (max-width: 992px) {
-  .about-us h1 {
+  .about-us .about-heading h1 {
     font-size: 35px;
   }
 }
 @media (max-width: 768px) {
-  .about-us h1 {
+  .about-us .about-heading h1 {
     font-size: 27px;
   }
 }
-.about-us p {
+.about-us .about-heading p {
   font-size: 16px;
   padding: 20px;
   color: #021a4f;
   font-weight: 500;
   letter-spacing: 1px;
 }
-.about-us .text p {
+.about-us .about-text p {
   font-size: 20px;
   text-align: center;
   font-weight: 600;
@@ -44,7 +44,7 @@
 }
 
 .our-team {
-  padding: 74px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
 .our-team h1 {
@@ -181,7 +181,7 @@
 }
 
 .process {
-  padding: 64px 0 40px;
+  padding: 40px 0 40px;
   background-color: #f6f6f6;
 }
 .process h4 {
@@ -281,7 +281,7 @@
 }
 
 .faq {
-  padding: 64px 0 40px;
+  padding: 40px 0 40px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
 .faq h1 {
@@ -367,7 +367,7 @@
 }
 
 .form {
-  padding: 64px 0 40px;
+  padding: 40px 0 40px;
   font-family: "Plus Jakatra Sans", sans-serif;
   background-color: #f6f6f6;
 }
@@ -736,7 +736,7 @@
 }
 
 .event {
-  padding: 64px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
 .event .news-event .image {
@@ -896,7 +896,7 @@
 
 .event-news {
   background-color: rgba(138, 134, 134, 0.2);
-  padding: 64px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
 .event-news h1 {
@@ -1084,7 +1084,7 @@
 }
 
 .facilities-wrapper {
-  padding: 64px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
 .facilities-wrapper .facilities-detail h1 {
@@ -1132,7 +1132,6 @@
   padding: 0 0 30px;
 }
 .contact h1 {
-  margin-top: 20px;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -1150,11 +1149,10 @@
     font-size: 26px;
   }
 }
-.contact .helpline {
+.contact .contact-helpline {
   border-radius: 5px;
-  padding-top: 20px;
 }
-.contact .helpline h2 {
+.contact .contact-helpline h2 {
   margin-top: 10px;
   text-align: left;
   font-size: 35px;
@@ -1164,20 +1162,20 @@
   margin-bottom: 10px;
 }
 @media (max-width: 992px) {
-  .contact .helpline h2 {
+  .contact .contact-helpline h2 {
     font-size: 28px;
   }
 }
 @media (max-width: 768px) {
-  .contact .helpline h2 {
+  .contact .contact-helpline h2 {
     font-size: 25px;
   }
 }
-.contact .helpline .quest {
+.contact .contact-helpline .question {
   font-size: 18px;
   color: #021a4f;
 }
-.contact .helpline .quest::after {
+.contact .contact-helpline .question::after {
   content: "";
   display: block;
   height: 1px;
@@ -1187,16 +1185,16 @@
   margin-bottom: 5px;
 }
 @media (max-width: 992px) {
-  .contact .helpline .quest {
+  .contact .contact-helpline .question {
     font-size: 16px;
   }
 }
 @media (max-width: 768px) {
-  .contact .helpline .quest {
+  .contact .contact-helpline .question {
     font-size: 14px;
   }
 }
-.contact .helpline::after {
+.contact .contact-helpline::after {
   content: "";
   display: block;
   height: 1px;
@@ -1205,22 +1203,22 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.contact .helpline .contact-info {
+.contact .contact-helpline .contact-info {
   display: flex;
 }
-.contact .helpline .contact-info i {
+.contact .contact-helpline .contact-info i {
   margin: 10px 20px 10px 0;
   font-size: 20px;
   color: rgb(248, 95, 30);
 }
-.contact .helpline .contact-info .contact-detail {
+.contact .contact-helpline .contact-info .contact-detail {
   margin-bottom: 5px;
   color: #021a4f;
 }
-.contact .helpline .contact-info .contact-detail strong {
+.contact .contact-helpline .contact-info .contact-detail strong {
   font-size: 18px;
 }
-.contact .helpline .contact-info .contact-detail p {
+.contact .contact-helpline .contact-info .contact-detail p {
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -1254,10 +1252,10 @@
 .contact .social-media ul li i {
   margin-right: 10px;
   font-size: 18px;
-  color: #021a4f;
+  color: rgb(248, 95, 30);
 }
 .contact .social-media ul li i:hover {
-  color: rgb(248, 95, 30);
+  color: #021a4f;
 }
 .contact form {
   box-shadow: 0 0 10px rgba(125, 124, 124, 0.3647058824);
@@ -2010,7 +2008,7 @@ header .fixed-nav.active {
 }
 
 .school-features-section {
-  padding: 74px 0 30px;
+  padding: 10px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
   background-color: rgba(214, 211, 211, 0.2);
 }
@@ -2133,8 +2131,8 @@ header .fixed-nav.active {
   }
 }
 .school-features-section .school-academics {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   position: relative;
 }
 .school-features-section .school-academics h1 {
@@ -2262,8 +2260,73 @@ header .fixed-nav.active {
   transition: all 0.5s ease-in-out 0s;
 }
 
+.academic-club-section {
+  padding: 64px 0 0;
+  font-family: "Plus Jakatra Sans", sans-serif;
+}
+.academic-club-section .club-info {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: #021a4f;
+}
+.academic-club-section .club-info h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #021a4f;
+}
+.academic-club-section .club-info p {
+  font-size: 16px;
+}
+@media (max-width: 992px) {
+  .academic-club-section .club-info h1 {
+    font-size: 35px;
+  }
+  .academic-club-section .club-info p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .academic-club-section .club-info h1 {
+    font-size: 27px;
+  }
+  .academic-club-section .club-info p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .academic-club-section .club {
+    top: -80px;
+  }
+}
+.academic-club-section .image img {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+  aspect-ratio: 3/1.6;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .academic-club-section .image {
+    margin-left: 30px;
+    margin-top: 25%;
+    aspect-ratio: 3/1;
+  }
+}
+@media (max-width: 768px) {
+  .academic-club-section .image {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .gallery-section {
-  padding: 74px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
 .gallery-section h1 {
@@ -2305,51 +2368,51 @@ header .fixed-nav.active {
 }
 
 .testimonials-section {
-  padding: 64px 0 30px;
+  padding: 30px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
   background-color: rgba(214, 211, 211, 0.2);
 }
-.testimonials-section .parent h1 {
+.testimonials-section .testimonial-info h1 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 2px;
   color: #021a4f;
 }
 @media (max-width: 992px) {
-  .testimonials-section .parent h1 {
+  .testimonials-section .testimonial-info h1 {
     font-size: 35px;
   }
 }
 @media (max-width: 768px) {
-  .testimonials-section .parent h1 {
+  .testimonials-section .testimonial-info h1 {
     font-size: 27px;
   }
 }
-.testimonials-section .parent .swiper {
+.testimonials-section .testimonial-info .swiper {
   height: 100%;
   width: 100%;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide .swiper-content {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide .swiper-content {
   padding-top: 3rem;
   display: flex;
   padding: 2rem;
   -moz-column-gap: 25px;
        column-gap: 25px;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item {
   border: 1px solid rgba(190, 190, 190, 0.9294117647);
   padding: 2rem;
   border-radius: 6px;
   margin: 0 0 20px;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item img {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item img {
   border: 2px solid rgba(190, 190, 190, 0.9294117647);
   border-radius: 50%;
   color: white;
@@ -2361,7 +2424,7 @@ header .fixed-nav.active {
   text-align: center;
   width: 100px;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item p {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item p {
   color: #666;
   font-size: 15px;
   line-height: 25px;
@@ -2369,7 +2432,7 @@ header .fixed-nav.active {
   padding: 15px;
   text-align: center;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item h3 {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item h3 {
   color: #021a4f;
   text-align: center;
   font-weight: 600;
@@ -2378,98 +2441,33 @@ header .fixed-nav.active {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.testimonials-section .parent .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item h4 {
+.testimonials-section .testimonial-info .swiper .swiper-wrapper .swiper-slide .swiper-content .content-item h4 {
   font-size: 18px;
   color: #021a4f;
   letter-spacing: 1px;
 }
-.testimonials-section .parent .swiper .swiper-pagination {
+.testimonials-section .testimonial-info .swiper .swiper-pagination {
   bottom: -6px;
 }
-.testimonials-section .parent .swiper .swiper-pagination-bullet-active {
+.testimonials-section .testimonial-info .swiper .swiper-pagination-bullet-active {
   background-color: #021a4f;
   height: 12px;
   width: 12px;
 }
 @media screen and (max-width: 992px) {
-  .testimonials-section .parent .swiper .swiper-slide .swiper-content {
+  .testimonials-section .testimonial-info .swiper .swiper-slide .swiper-content {
     padding: 0;
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
-  .testimonials-section .parent .swiper-content {
+  .testimonials-section .testimonial-info .swiper-content {
     flex-direction: column;
   }
-  .testimonials-section .parent .swiper-content .content-item {
+  .testimonials-section .testimonial-info .swiper-content .content-item {
     align-items: center;
     height: auto;
     width: 100%;
     padding: 1rem 1rem !important;
-  }
-}
-
-.academic-program-section {
-  padding: 64px 0 0;
-  font-family: "Plus Jakatra Sans", sans-serif;
-}
-.academic-program-section .club {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  color: #021a4f;
-}
-.academic-program-section .club h1 {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-  color: #021a4f;
-}
-.academic-program-section .club p {
-  font-size: 16px;
-}
-@media (max-width: 992px) {
-  .academic-program-section .club h1 {
-    font-size: 35px;
-  }
-  .academic-program-section .club p {
-    font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .academic-program-section .club h1 {
-    font-size: 27px;
-  }
-  .academic-program-section .club p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 768px) {
-  .academic-program-section .club {
-    top: -80px;
-  }
-}
-.academic-program-section .image img {
-  position: relative;
-  width: 100%;
-  flex-shrink: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
-  aspect-ratio: 3/1.6;
-  height: auto;
-}
-@media (max-width: 992px) {
-  .academic-program-section .image {
-    margin-left: 30px;
-    margin-top: 25%;
-    aspect-ratio: 3/1;
-  }
-}
-@media (max-width: 768px) {
-  .academic-program-section .image {
-    padding: 0;
-    margin: 0;
   }
 }
 

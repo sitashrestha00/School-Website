@@ -1,5 +1,5 @@
 const navbar = document.querySelector(".navbar");
-const halfPageHeight = window.innerHeight * 0.5;
+const halfPageHeight = window.innerHeight * 0.1;
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > halfPageHeight) {

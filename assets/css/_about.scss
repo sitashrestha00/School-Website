@@ -3,32 +3,35 @@
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #d6d3d333;
-    h1{
-        font-size: 46px;
-        font-weight: 800;
-        letter-spacing: 2px;
-        color: $text-color;
-        padding: 30px;
-        margin-top: 40px;
-    }
-    @media (max-width: 992px) {
+    .about-heading{
+        
         h1{
-           font-size: 35px;
-       }
-    }
-    @media (max-width: 768px) {
-        h1{
-            font-size: 27px;
+            font-size: 46px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: $text-color;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        @media (max-width: 992px) {
+            h1{
+               font-size: 35px;
+           }
+        }
+        @media (max-width: 768px) {
+            h1{
+                font-size: 27px;
+            }
+        }
+        p{
+            font-size: 16px;
+            padding: 20px;
+            color: $text-color;
+            font-weight: 500;
+            letter-spacing: 1px;
         }
     }
-    p{
-        font-size: 16px;
-        padding: 20px;
-        color: $text-color;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-    .text{
+    .about-text{
         p{
             font-size: 20px;
             text-align: center;
@@ -45,7 +48,7 @@
     }
 }
 .our-team{
-    padding: 74px 0 30px;
+    padding: 30px 0 30px;
     font-family: 'Plus Jakatra Sans', sans-serif;
     h1{
         font-size: 40px;
