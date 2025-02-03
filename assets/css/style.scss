@@ -618,7 +618,7 @@ header {
                 .courses:hover .courses-detail-overlay{
                     opacity: 1;
                     background-color: $text-color;
-                    transform: translateY(0px);
+                    transform: translateY(0);
                     transition: all 0.5s ease-in-out 0s;
                 }
             }

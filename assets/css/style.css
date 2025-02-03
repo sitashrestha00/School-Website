@@ -1174,6 +1174,7 @@
 .contact .contact-helpline .question {
   font-size: 18px;
   color: #021a4f;
+  margin-top: 20px;
 }
 .contact .contact-helpline .question::after {
   content: "";
@@ -1182,7 +1183,7 @@
   width: 100%;
   background-color: rgba(175, 171, 171, 0.462745098);
   margin-top: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 @media (max-width: 992px) {
   .contact .contact-helpline .question {
@@ -1194,16 +1195,8 @@
     font-size: 14px;
   }
 }
-.contact .contact-helpline::after {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 100%;
-  background-color: rgba(175, 171, 171, 0.462745098);
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 .contact .contact-helpline .contact-info {
+  margin: 10px 0 10px 0;
   display: flex;
 }
 .contact .contact-helpline .contact-info i {
@@ -1221,6 +1214,15 @@
 .contact .contact-helpline .contact-info .contact-detail p {
   margin-bottom: 10px;
   font-size: 15px;
+}
+.contact .contact-helpline::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(175, 171, 171, 0.462745098);
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .contact .social-media h2 {
   text-align: left;
@@ -2256,7 +2258,7 @@ header .fixed-nav.active {
 .school-features-section .school-academics .swiper .swiper-slide .courses:hover .courses-detail-overlay {
   opacity: 1;
   background-color: #021a4f;
-  transform: translateY(0px);
+  transform: translateY(0);
   transition: all 0.5s ease-in-out 0s;
 }
 
