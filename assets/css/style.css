@@ -640,10 +640,10 @@
   transition: all 0.5s ease-in-out 0s;
 }
 
-.featured-programs {
+.featured-programs-section {
   font-family: "Plus Jakatra Sans", sans-serif;
 }
-.featured-programs h1 {
+.featured-programs-section h1 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -651,16 +651,16 @@
   padding-bottom: 20px;
 }
 @media (max-width: 992px) {
-  .featured-programs h1 {
+  .featured-programs-section h1 {
     font-size: 35px;
   }
 }
 @media (max-width: 768px) {
-  .featured-programs h1 {
+  .featured-programs-section h1 {
     font-size: 27px;
   }
 }
-.featured-programs .club-intro p {
+.featured-programs-section .club-intro p {
   color: #021a4f;
   font-size: 25px;
   font-weight: 500;
@@ -669,25 +669,25 @@
   padding: 20px;
 }
 @media (max-width: 992px) {
-  .featured-programs .club-intro p {
+  .featured-programs-section .club-intro p {
     font-size: 22px;
   }
 }
 @media (max-width: 768px) {
-  .featured-programs .club-intro p {
+  .featured-programs-section .club-intro p {
     font-size: 18px;
   }
 }
 @media (max-width: 575px) {
-  .featured-programs .club-intro p {
+  .featured-programs-section .club-intro p {
     font-size: 16px;
   }
 }
-.featured-programs .club {
+.featured-programs-section .club {
   margin: 0;
   padding: 0;
 }
-.featured-programs .club .club-data::after {
+.featured-programs-section .club .club-data::after {
   content: "";
   display: block;
   height: 1px;
@@ -696,42 +696,42 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.featured-programs .club .club-data .club-detail .image {
+.featured-programs-section .club .club-data .club-detail .image {
   text-align: center;
 }
-.featured-programs .club .club-data .club-detail .image img {
+.featured-programs-section .club .club-data .club-detail .image img {
   width: auto;
   height: 200px;
 }
-.featured-programs .club .club-data .club-detail .club-description p {
+.featured-programs-section .club .club-data .club-detail .club-description p {
   font-size: 16px;
   color: #021a4f;
 }
-.featured-programs .club .club-data .club-activities {
+.featured-programs-section .club .club-data .club-activities {
   margin-top: 10px;
 }
-.featured-programs .club .club-data .club-activities .club-work {
+.featured-programs-section .club .club-data .club-activities .club-work {
   margin-bottom: 15px;
   display: flex;
 }
-.featured-programs .club .club-data .club-activities .club-work img {
+.featured-programs-section .club .club-data .club-activities .club-work img {
   margin-right: 20px;
   height: auto;
   width: 110px;
 }
-.featured-programs .club .club-data .club-activities .club-work .work-detail p a {
+.featured-programs-section .club .club-data .club-activities .club-work .work-detail p a {
   font-size: 16px;
   color: #021a4f;
   text-decoration: none;
 }
-.featured-programs .club .club-data .club-activities .club-work .work-detail p a:hover {
+.featured-programs-section .club .club-data .club-activities .club-work .work-detail p a:hover {
   color: rgb(248, 95, 30);
 }
-.featured-programs .club .club-data .club-activities .club-work .work-detail small {
+.featured-programs-section .club .club-data .club-activities .club-work .work-detail small {
   font-size: 14px;
   color: #021a4f;
 }
-.featured-programs .club .club-info .row {
+.featured-programs-section .club .club-info .row {
   flex-direction: row-reverse;
 }
 
@@ -1087,51 +1087,43 @@
   padding: 64px 0 30px;
   font-family: "Plus Jakatra Sans", sans-serif;
 }
-.facilities-wrapper .facilities-detail h1,
-.facilities-wrapper .facilities-detail-1 h1 {
+.facilities-wrapper .facilities-detail h1 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 2px;
   color: #021a4f;
 }
-.facilities-wrapper .facilities-detail p,
-.facilities-wrapper .facilities-detail-1 p {
+.facilities-wrapper .facilities-detail p {
   font-size: 16px;
   color: #021a4f;
 }
 @media (max-width: 992px) {
-  .facilities-wrapper .facilities-detail h1,
-  .facilities-wrapper .facilities-detail-1 h1 {
+  .facilities-wrapper .facilities-detail h1 {
     font-size: 35px;
   }
-  .facilities-wrapper .facilities-detail p,
-  .facilities-wrapper .facilities-detail-1 p {
+  .facilities-wrapper .facilities-detail p {
     font-size: 15px;
   }
 }
 @media (max-width: 768px) {
-  .facilities-wrapper .facilities-detail h1,
-  .facilities-wrapper .facilities-detail-1 h1 {
+  .facilities-wrapper .facilities-detail h1 {
     font-size: 27px;
   }
-  .facilities-wrapper .facilities-detail p,
-  .facilities-wrapper .facilities-detail-1 p {
+  .facilities-wrapper .facilities-detail p {
     font-size: 14px;
   }
 }
-.facilities-wrapper .facilities-detail .image,
-.facilities-wrapper .facilities-detail-1 .image {
+.facilities-wrapper .facilities-detail .image {
   margin-bottom: 20px;
 }
-.facilities-wrapper .facilities-detail .image img,
-.facilities-wrapper .facilities-detail-1 .image img {
+.facilities-wrapper .facilities-detail .image img {
   aspect-ratio: 5/3;
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.facilities-wrapper .facilities-detail-1 .row {
+.facilities-wrapper .facilities-info .row {
   flex-direction: row-reverse;
 }
 

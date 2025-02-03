@@ -26,8 +26,7 @@
 .facilities-wrapper{
     padding: 64px 0 30px;
     font-family: 'Plus Jakatra Sans', sans-serif;
-    .facilities-detail,
-    .facilities-detail-1{
+    .facilities-detail{
         h1{
             font-size: 40px;
             font-weight: 700;
@@ -64,7 +63,7 @@
             }
         }
     }
-    .facilities-detail-1{
+    .facilities-info{
         .row{
             flex-direction: row-reverse;
         }
